@@ -1,0 +1,27 @@
+2024-11-03 16:17:57,008 - exceptions - ERROR - DatosInvalidosError: Datos inválidos para nombre: debe tener al menos 3 caracteres
+2024-11-03 16:17:57,008 - exceptions - ERROR - DatosInvalidosError: Datos inválidos para correo: formato de correo inválido
+2024-11-03 16:17:57,008 - exceptions - ERROR - DatosInvalidosError: Datos inválidos para teléfono: formato de teléfono inválido
+2024-11-03 16:21:53,796 - exceptions - CRITICAL - Error inesperado: TTF Font file not found: DejaVuSansCondensed.ttf
+Traceback (most recent call last):
+  File "C:\Users\hassa\Documents\P_AULA_PRUEBA\exceptions.py", line 132, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hassa\Documents\P_AULA_PRUEBA\main.py", line 107, in generar_reporte
+    self._generar_reporte_pdf(usuario, mes, anio)
+  File "C:\Users\hassa\Documents\P_AULA_PRUEBA\main.py", line 112, in _generar_reporte_pdf
+    pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
+  File "C:\Users\hassa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\fpdf\fpdf.py", line 469, in add_font
+    raise RuntimeError("TTF Font file not found: %s" % fname)
+RuntimeError: TTF Font file not found: DejaVuSansCondensed.ttf
+2024-11-03 16:22:16,241 - exceptions - CRITICAL - Error inesperado: TTF Font file not found: DejaVuSansCondensed.ttf
+Traceback (most recent call last):
+  File "C:\Users\hassa\Documents\P_AULA_PRUEBA\exceptions.py", line 132, in wrapper
+    resultado = func(*args, **kwargs)
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hassa\Documents\P_AULA_PRUEBA\main.py", line 107, in generar_reporte
+    self._generar_reporte_pdf(usuario, mes, anio)
+  File "C:\Users\hassa\Documents\P_AULA_PRUEBA\main.py", line 112, in _generar_reporte_pdf
+    pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
+  File "C:\Users\hassa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\fpdf\fpdf.py", line 469, in add_font
+    raise RuntimeError("TTF Font file not found: %s" % fname)
+RuntimeError: TTF Font file not found: DejaVuSansCondensed.ttf
